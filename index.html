@@ -6,6 +6,13 @@
     <title>web1 </title>
 </head>
 <body>
+  <header>
+    <img src="https://w7.pngwing.com/pngs/226/833/png-transparent-gray-wolf-illustration-gray-wolf-logo-black-wolf-miscellaneous-carnivoran-dog-like-mammal.png" alt="Логотип" width="150"/>
+    <a href="http://kubsu.ru/">Сайт КубГУ</a>
+    <a href="/">Главная страница</a>
+    <a href="">Пустая ссылка</a>
+    <h1>Название</h1>
+  </header>
     <h1>Web_1</h1>
     <ul>
     <li> <a href="http://kubsu.ru/">главная страница КубГУ</a> </li>
@@ -28,7 +35,7 @@
 
         <map name="church">
           <area shape="rect" coords="50,50,100,75" alt="something went wrong" href="https://www.youtube.com/watch?v=ho9rZjlsyYY">
-          <area shape="circle" coords="50,50,100" alt="something went wrong" href="https://www.youtube.com/watch?v=ho9rZjlsyYY">
+          <area shape="circle" coords="100,100,30" alt="something went wrong" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
         </map></li>
     <li> <a href="">  ссылка с пустым href;</a></li>
     <li> <a> https://weather.com/</a></li>
@@ -48,42 +55,42 @@
 <label>
   Ваши ФИО:<br />
   <input name="field"
-  placeholder="Введите ФИО " />
+  placeholder="Введите ФИО " required/>
 </label><br />
 
 <label>
     Телефон:<br />
     <input name="field-number"
     type="tel"
-    placeholder="Введите телефон " />
+    placeholder="Введите телефон" required/>
   </label><br />
 
 <label>
   Ваш email:<br />
   <input name="field-email"
     type="email"
-    placeholder="Введите вашу почту" />
+    placeholder="Введите вашу почту" required/>
 </label><br />
 
 <label>
   Даты:<br />
   <input name="field-date"
-    type="date" />
+    type="date" required/>
 </label><br />
 
 Выберите пол:<br />
-<label><input type="radio" checked="checked"
+<label><input type="radio" 
   name="gender" value="Мужской" />
   Мужской</label>
 <label><input type="radio"
-  name="gender" value="Женский" />
+  name="gender" value="Женский" required/>
   Женский</label><br />
 
   <label>
     Любимый язык программирования:
     <br />
     <select name="field-language"
-      multiple="multiple">
+      multiple="multiple" required>
       <option value="1">Pascal</option>
       <option value="2">C</option>
       <option value="3">C++</option>
@@ -100,15 +107,15 @@
 
 <label>
     Ваша биография:<br />
-  <textarea name="field-biography"> </textarea>
+  <textarea name="field-biography" required></textarea>
 </label><br />
 
 <label><input type="checkbox" 
-  name="check-1" />
+  name="check-1" required />
   С контрактом ознакомлен (а)</label><br />
 
 <label>
-    <input type="button" value="Сохранить" />
+    <input type="submit" value="Сохранить" />
 </label>
 </form>
 </body>
