@@ -1,8 +1,11 @@
 header {
     width:100%;
-    background-color:#ccc;
+    background-color: chocolate;
     padding: 10px;
     height:120px;
+}
+body{
+    background-color: crimson; 
 }
 
 header img {
@@ -25,7 +28,7 @@ nav {
 
 footer {
     width: 100%;
-    background-color: #ccc;
+    background-color: chocolate;
     padding:50px;
 }
 
@@ -39,9 +42,9 @@ thead {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color:red;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #e6e6e6;
+    background-color: blue;
 }
