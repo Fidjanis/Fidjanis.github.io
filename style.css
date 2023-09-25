@@ -48,3 +48,11 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: blue;
 }
+@media screen and (min-width: 981px) {
+    header {
+        flex-direction: row;
+    }
+    table {
+        order: 0;
+    }
+}
