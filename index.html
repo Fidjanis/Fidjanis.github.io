@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media ="screen" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>web1 </title>
 </head>
 <body>
-  <header>
-    <img src="logotip.png" alt="Волк" width="150"/>
-    <a href="https://github.com/Fidjanis/Fidjanis.github.io/tree/main">Ссылка на Github</a>
-    <a href="#table">Ссылка на таблицу </a>
-    <a href="#form">Ссылка на форму</a>
-    <h1>Web_2</h1>
+  <header class="container-fluid bg-light text-center">
+    <div class="row">
+      <div class="row mx-5">
+        <img src="logotip.png" alt="Волк" width="150"/>
+        <h1 class="my-3 mx-4  ">Web2</h1>
+      </div>
+        <a href="https://github.com/Fidjanis/Fidjanis.github.io/tree/main" class="row col-md-1 m-2 p-3 bg-white">Ссылка на Github</a>
+        <a href="#table" class="row col-md-1 m-2 p-3 bg-white">Ссылка на таблицу </a>
+        <a href="#form" class="row col-md-1 m-2 p-3 bg-white">Ссылка на форму</a>
+      
+  </div>
   </header>
-  <nav>
-    <h1>Web_1</h1>
+  <nav class="container d-flex flex-column">
+    <div class="order-2 order-md-1">
+      <h1>Web_1</h1>
     <ul>
-    <li> <a href="http://kubsu.ru/">главная страница КубГУ</a> </li>
-    <li> <a href="https://kubsu.ru/">гиперссылка на Кубгу в протоколе https </a> </li>
-    <li> <a href="https://ru.wikipedia.org/wiki/Лепрозорий">               
-        <img src="https://o-tendencii.com/uploads/posts/2022-05/1653987970_65-o-tendencii-com-p-kadutsei-germesa-tatu-foto-70.jpg" alt="Извините, не загрузилось" width="350"> 
-    </a> </li>
+      <li> <a href="http://kubsu.ru/">главная страница КубГУ</a> </li>
+      <li> <a href="https://kubsu.ru/">гиперссылка на Кубгу в протоколе https </a> </li>
+      <li> <a href="https://ru.wikipedia.org/wiki/Лепрозорий">               
+        <img src="https://o-tendencii.com/uploads/posts/2022-05/1653987970_65-o-tendencii-com-p-kadutsei-germesa-tatu-foto-70.jpg" alt="Извините, не загрузилось" width="350"> </a> </li>
     <li> <a href="/ru/science">Сокращенная ссылка на внутреннюю страницу  </a>  </li>
     <li><a href="/ru.wikipedia.org/"> Сокращенная на главную </a> </li> 
     <li><a href="#part"> ссылка на фрагмент текущей страницы </a>  </li>
@@ -50,11 +59,15 @@
     </ol>нумерованный список ссылок с подписями title;</li>
     <li> <a href="ftp://demo:password@test.rebex.net/pub/example/winceclient.png"> ссылка на файл на сервере FTP с авторизацией;</a></li>
     </ul>
+    </div>
     <h2 id="part">Фрагмент </h2>
-    <table>
-      <thead>
+    <div style="display: block; width: 100%; overflow-x:auto;">
+    
+    <div class=" order-1 order-md-2">
+      <table class="table" id="tabl">
+      <thead class="thead-light">
       <tr>
-        <th id="table" colspan="4">Заголовок</th>
+        <th class="text-center" colspan="4">Заголовок</th>
       </tr>
       <tr>
         <th>Колонка 1</th>
@@ -99,9 +112,10 @@
       </tr>
       </tbody>
     </table>
-
-    
-<form action="/" method="POST">
+  </div>
+ 
+<h2 id="forma" class="order-3">Форма</h2> 
+<form action="/" method="POST"  class="order-4">
 
 <label>
   Ваши ФИО:<br />
@@ -173,6 +187,7 @@
 </form>
 </nav>
 <footer>
+  <footer class="container-fluid bg-light p-5">
   (c) Богдан Ким
 </footer>
 </body>
