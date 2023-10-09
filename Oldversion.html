@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media ="screen" href="style.css">
+    <title>web1 </title>
+</head>
+<body>
+  <header>
+    <img src="logotip.png" alt="Волк" width="150"/>
+    <a href="https://github.com/Fidjanis/Fidjanis.github.io/tree/main">Ссылка на Github</a>
+    <a href="#table">Ссылка на таблицу </a>
+    <a href="#form">Ссылка на форму</a>
+    <h1>Web_2</h1>
+  </header>
+  <nav>
+    <h1>Web_1</h1>
+    <ul>
+    <li> <a href="http://kubsu.ru/">главная страница КубГУ</a> </li>
+    <li> <a href="https://kubsu.ru/">гиперссылка на Кубгу в протоколе https </a> </li>
+    <li> <a href="https://ru.wikipedia.org/wiki/Лепрозорий">               
+        <img src="https://o-tendencii.com/uploads/posts/2022-05/1653987970_65-o-tendencii-com-p-kadutsei-germesa-tatu-foto-70.jpg" alt="Извините, не загрузилось" width="350"> 
+    </a> </li>
+    <li> <a href="/ru/science">Сокращенная ссылка на внутреннюю страницу  </a>  </li>
+    <li><a href="/ru.wikipedia.org/"> Сокращенная на главную </a> </li> 
+    <li><a href="#part"> ссылка на фрагмент текущей страницы </a>  </li>
+    <li> <a href="https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/kapli-sprei-i-rastvory?sort=popular&page=1&xsubject=3745%3B3027%3B8392%3B8390">  ссылка с тремя параметрами URL</a></li>
+    <li> <a href="https://vk.com/id411851540">  ссылка с параметром id в URL;</a></li>
+    <li> <a href="./news.html"> относительная ссылка на страницу в текущем каталоге;</a></li>
+    <li> <a href="https://www.blizzard.com/ru-ru/company/about/"> относительная ссылка на страницу в каталоге about;</a></li>
+    <li> <a href="../new.html"> относительная ссылка на страницу в каталоге уровнем выше текущего;</a></li>
+    <li> <a href="../../news.html"> относительная ссылка на страницу в каталоге двумя уровнями выше;</a></li>
+    <li> Поговорим о <a href="https://ru.wikipedia.org/wiki/Коррупция">коррупции ;</a></li>
+    <li> <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D0%B2%D0%B5%D0%BA_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B#%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0_%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B9_%D0%BF%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8%D0%BD%D1%8B_XIX_%D0%B2%D0%B5%D0%BA%D0%B0"> ссылка на фрагмент страницы стороннего сайта;</a></li>
+    <li> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2016-02-23_15-48-06_paris.jpg/411px-2016-02-23_15-48-06_paris.jpg" alt="Sorry" usemap="#church" width="200" height="300">
+
+        <map name="church">
+          <area shape="rect" coords="50,50,100,75" alt="something went wrong" href="https://www.youtube.com/watch?v=ho9rZjlsyYY">
+          <area shape="circle" coords="100,100,30" alt="something went wrong" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        </map></li>
+    <li> <a href="">  ссылка с пустым href;</a></li>
+    <li> <a> https://weather.com/</a></li>
+    <li> <a href="https://new.ras.ru/nauchnoe-soobshestvo/" rel="nofollow"> cсылка по которой запрещен переход поисковикам;</a></li>
+    <li> <a href="https://new.ras.ru/nauchnoe-soobshestvo/" rel="noindex"> cсылка запрещённая для индексации поисковикам;</a></li>
+    <li> <ol>
+        <li><a href="https://ru.wikipedia.org/wiki/Тор_(мифология)" title="Тор"> Один </a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/Зевс" title="Зевс">Два </a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/Перун" title="Перун"> Три</a></li>
+    </ol>нумерованный список ссылок с подписями title;</li>
+    <li> <a href="ftp://demo:password@test.rebex.net/pub/example/winceclient.png"> ссылка на файл на сервере FTP с авторизацией;</a></li>
+    </ul>
+    <h2 id="part">Фрагмент </h2>
+    <table>
+      <thead>
+      <tr>
+        <th id="table" colspan="4">Заголовок</th>
+      </tr>
+      <tr>
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td>Ячейка 2</td>
+        <td>Ячейка 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      <tr>
+        <td>Ячейка 1</td>
+        <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
+        <td>Ячейка 4</td>
+      </tr>
+      </tbody>
+    </table>
+
+    
+<form action="/" method="POST">
+
+<label>
+  Ваши ФИО:<br />
+  <input name="field"
+  id="form"
+  placeholder="Введите ФИО " required/>
+</label><br />
+
+<label>
+    Телефон:<br />
+    <input name="field-number"
+    type="tel"
+    placeholder="Введите телефон" required/>
+  </label><br />
+
+<label>
+  Ваш email:<br />
+  <input name="field-email"
+    type="email"
+    placeholder="Введите вашу почту" required/>
+</label><br />
+
+<label>
+  Даты:<br />
+  <input name="field-date"
+    type="date" required/>
+</label><br />
+
+Выберите пол:<br />
+<label><input type="radio" 
+  checked="checked"
+  name="gender" value="Мужской" />
+  Мужской</label>
+<label><input type="radio"
+  name="gender" value="Женский" required/>
+  Женский</label><br />
+
+  <label>
+    Любимый язык программирования:
+    <br />
+    <select name="field-language"
+      multiple="multiple" required>
+      <option value="1">Pascal</option>
+      <option value="2">C</option>
+      <option value="3">C++</option>
+      <option value="4">JavaScript</option>
+      <option value="5">PHP</option>
+      <option value="6">Python</option>
+      <option value="7">Java</option>
+      <option value="8">Haskel</option>
+      <option value="9">Clojure</option>
+      <option value="10">Prolog</option>
+      <option value="11">Scala</option>
+    </select>
+  </label><br />
+
+<label>
+    Ваша биография:<br />
+  <textarea name="field-biography" required></textarea>
+</label><br />
+
+<label><input type="checkbox" 
+  name="check-1" required />
+  С контрактом ознакомлен (а)</label><br />
+
+<label>
+    <input type="submit" value="Сохранить" />
+</label>
+</form>
+</nav>
+<footer>
+  (c) Богдан Ким
+</footer>
+</body>
+</html>
