@@ -14,14 +14,18 @@
         const productSelect = document.getElementById("product");
         const calculateButton = document.getElementById("calculate");
         const totalCostSpan = document.getElementById("result");
-
         calculateButton.addEventListener("click", function() {
             let quantity = parseInt(quantityInput.value);
             let price = parseInt(productSelect.value);
             let totalCost = 0;
-            totalCost = quantity*price;
             if(!isNaN(totalCost)){  
-              totalCostSpan.textContent=totalCost;
+              if(quantity<0 || price<0){
+              totalCostSpan.textContent="0";
+              }
+              else{
+                totalCost=price*quantity;
+                totalCostSpan.textContent=totalCost;
+              }
             }
             else{
               totalCostSpan.textContent="0";
