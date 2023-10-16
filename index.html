@@ -8,6 +8,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+        const quantityInput = document.getElementById("quantity");
+        const productSelect = document.getElementById("product");
+        const calculateButton = document.getElementById("calculate");
+        const totalCostSpan = document.getElementById("result");
+
+        calculateButton.addEventListener("click", function() {
+            let quantity = parseInt(quantityInput.value);
+            let price = parseInt(productSelect.value);
+            let totalCost = 0;
+            totalCost = quantity*price;
+            if(!isNaN(totalCost)){  
+              totalCostSpan.textContent=totalCost;
+            }
+            else{
+              totalCostSpan.textContent="0";
+            }
+        });
+    });
+</script>
   <title>web1 </title>
 </head>
 
@@ -80,7 +101,7 @@
       </ul>
     </div>
     <h2 id="part">Фрагмент </h2>
-    
+   
 
       <div class=" order-1 order-md-2">
         <table class="table" id="table">
@@ -132,6 +153,7 @@
           </tbody>
         </table>
       
+
       <h2 id="forma" class="order-3">Форма</h2>
       <form action="/" method="POST" class="order-4">
 
@@ -191,6 +213,21 @@
           <input type="submit" value="Сохранить" />
         </label>
       </form>
+      <div class="order-4" id="calc">
+        <h1>Калькулятор стоимости заказа</h1>
+        <form>
+            <label for="quantity">Количество чашек кофе:</label>
+            <input type="number" id="quantity" min="1"required ><br><br>
+            <label for="product">Выберите размер кофе:</label>
+            <select id="product">
+                <option value="150">Маленький (150 руб.)</option>
+                <option value="200">Средний (200 руб.)</option>
+                <option value="250">Большой (250 руб.)</option>
+            </select><br><br>
+            <button type="button" id="calculate">Подсчитать стоимость заказа</button>
+        </form>
+        <p>Стоимость заказа: <span id="result">0</span >руб</p> 
+    </div>
   </nav>
   <footer>
     <footer class="container-fluid p-5 bg-secondary">
