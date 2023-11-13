@@ -121,35 +121,35 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-danger">
+            <tr class="bg-primary">
               <td>Ячейка 1</td>
               <td>Ячейка 2</td>
               <td>Ячейка 3</td>
               <td>Ячейка 4</td>
             </tr>
-            <tr class="bg-primary">
+            <tr class="bg-danger">
               <td>Ячейка 1</td>
               <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
               <td>Ячейка 4</td>
             </tr>
-            <tr class="bg-danger">
+            <tr class="bg-primary">
               <td>Ячейка 1</td>
               <td>Ячейка 2</td>
               <td>Ячейка 3</td>
               <td>Ячейка 4</td>
             </tr>
-            <tr class="bg-primary">
+            <tr class="bg-danger">
               <td>Ячейка 1</td>
               <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
               <td>Ячейка 4</td>
             </tr>
-            <tr class="bg-danger">
+            <tr class="bg-primary">
               <td>Ячейка 1</td>
               <td>Ячейка 2</td>
               <td>Ячейка 3</td>
               <td>Ячейка 4</td>
             </tr>
-            <tr class="bg-primary">
+            <tr class="bg-danger">
               <td>Ячейка 1</td>
               <td colspan="2"> Ячейка 2 объединённая с Ячейкой 3</td>
               <td>Ячейка 4</td>
@@ -232,11 +232,49 @@
         </form>
         <p>Стоимость заказа: <span id="result">0</span >руб</p> 
     </div>
+    <div class="order-5" id="calc2">
+      <h1>Задание 6</h1>
+      <form id="calculatorForm">
+      <div id="mainSelect">
+          
+          <input type="radio" name="radio-type" value="0" id="first-opt">
+          <label for="first-opt">Мороженное</label><br>
+          <input type="radio" name="radio-type" value="1" id="second-opt">
+          <label for="second-opt">Выпечка</label><br>
+          <input type="radio" name="radio-type" value="2" id="third-opt">
+          <label for="third-opt">Торт</label><br>
+      </div>
+      <div id="fieldSelect">
+        <label for="selectOptions">Выберите выпечку:</label>
+        <br>
+        <select name="select" id="selectOptions" multiple>
+          <option value="selectOption1">Слойка с сыром</option>
+          <option value="selectOption2">Булочка с маком</option>
+          <option value="selectOption3">Хлеб</option>
+        </select>
+      </div>
+      <div id="checkboxedSelect">
+        <h4>Выберите торт</h4>
+        <div>
+          <input type="checkbox" id="chbOp1" name="checkBoxtype" value="checkboxOption1">
+          <label for="chbOp1">Наполеон</label><br>
+          <input type="checkbox" id="chbOp2" name="checkBoxtype" value="checkboxOption2">
+          <label for="chbOp2">Панчо</label>
+        </div>
+      </div>
+        <br>
+        <label for="ammount2">Количество товара</label>
+        <input type="number" required id="ammount2" name="ammount2" min="1">
+        <p id="calc2-answer"></p>
+      </form>
+  </div>
+<div class="order-6" id="elem-border">
   </nav>
   <footer>
     <footer class="container-fluid p-5 bg-secondary">
       (c) Богдан Ким
     </footer>
+    <script src="scriptCalc2.js"></script>
 </body>
 
 </html>
